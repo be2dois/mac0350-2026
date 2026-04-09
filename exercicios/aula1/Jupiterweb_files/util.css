@@ -1,0 +1,32 @@
+.ajax{
+	background: url(images/ajaxLoaderPeq.gif) no-repeat;
+	height:16px;
+	width:16px;
+}
+
+.check {
+	background-image:
+		url(images/check.jpg);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	padding: 0 0 0 20px;
+	height: 20px;
+}
+
+.uncheck {
+	background-image:
+		url(images/uncheck.jpg);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	padding: 0 0 0 20px;
+	height: 20px;
+}
+
+.remover {
+	background-image:
+		url(images/remover.gif);
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	padding: 0 0 0 16px;
+	height: 16px;
+}

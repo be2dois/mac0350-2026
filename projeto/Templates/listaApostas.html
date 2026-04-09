@@ -1,0 +1,47 @@
+<div>
+    <input type="hidden" name="codigo" value="{{ codigo }}">
+
+    <input type="text" 
+        name="busca" 
+        placeholder="Buscar avaliação (ex: P1)..."
+        hx-get="/listaApostas"
+        hx-trigger="input changed delay:500ms"
+        hx-select="#lista"
+        hx-target="#lista"
+        hx-include="[name='codigo']" 
+        value="{{ busca }}">
+</div>
+
+<div id="lista">
+    <ul>
+        {% for aposta in apostas %}
+            <li>
+                <strong>ID: {{ aposta.id }} - {{ aposta.nome }}</strong> <br>
+                Aposta: R${{ aposta.aposta }} | Chute: {{ aposta.previa }} | 
+                Nota Final: {% if aposta.final != None %}{{ aposta.final }}{% else %}Pendente{% endif %}
+            </li>
+        {% else %}
+            <li>Não há apostas registradas para esta matéria.</li>
+        {% endfor %}
+    </ul>
+
+    <div class="paginacao">
+        {% if pagina > 1 %}
+            <button hx-get="/listaApostas?codigo={{ codigo }}&busca={{ busca }}&pagina={{ pagina - 1 }}"
+                    hx-target="#lista"
+                    hx-select="#lista">
+                Anterior
+            </button>
+        {% endif %}
+
+        <span>Página {{ pagina }}</span>
+
+        {% if proxima %}
+            <button hx-get="/listaApostas?codigo={{ codigo }}&busca={{ busca }}&pagina={{ pagina + 1 }}"
+                    hx-target="#lista"
+                    hx-select="#lista">
+                Próxima
+            </button>
+        {% endif %}
+    </div>
+</div>

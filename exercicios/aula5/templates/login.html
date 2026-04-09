@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        <input type="text" id="nome" placeholder="Nome de usuário"><br><br>
+        <input type="password" id="senha" placeholder="Senha"><br><br>
+        <button type="button" onclick="fazerLogin()">Entrar</button>
+    </form>
+
+    <script>
+        async function fazerLogin() {
+            const user = document.getElementById('nome').value;
+            const pass = document.getElementById('senha').value;
+
+            const resposta = await fetch(`/login?username=${user}&senha=${pass}`, {
+                method: 'POST'
+            });
+
+            if (resposta.ok) {
+                window.location.href = "/home";
+            } else {
+                alert("Erro: Usuário não encontrado ou senha incorreta!");
+            }
+        }
+    </script>
+</body>
+</html>

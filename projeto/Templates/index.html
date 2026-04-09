@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.js"></script>
+        <title>Meu Site</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <style> 
+            
+        </style>
+    </head>
+    <body>
+        <h1>BetNotas</h1>
+        <p>Bem vindo ao BetNotas!</p>
+        <p>Use escala de 0 a 100 para as notas. Voce dobra o valor apostado se acertar sua nota com uma margem de 3, e perde tudo caso contrario. Se voce ficar com saldo negativo, sua divida aumenta em 10% a cada transacao.</p>
+        <div id="saldo-container" style="font-size: 1.2rem; font-weight: bold;">
+            Saldo: <span id="valor-saldo">{{ saldo }}</span>
+        </div>
+        <button hx-get="/listaMaterias"
+                hx-target="main">
+                Lista de materias
+        </button>
+        <form hx-get="/listaApostas" hx-target="main">
+            <input type="text" name="codigo" placeholder="Código da matéria" required>
+            <button type="submit">Buscar Apostas</button>
+        </form>
+        <button hx-get="/editar"
+                hx-target="main">
+                Editar materias e apostas
+        </button>
+        <hr>
+        <main hx-get="/listaMaterias"
+              hx-target="main"
+              hx-trigger="load">
+        </main>
+    </body>
+</html>

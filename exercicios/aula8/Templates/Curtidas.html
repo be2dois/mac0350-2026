@@ -1,0 +1,13 @@
+<h2>Curtidas</h2>
+
+<p>Número de curtidas: <strong id="contador">{{ curtidas }}</strong></p>
+
+<button hx-post="/curtir" hx-target="#contador">
+    Curtir
+</button>
+
+<button hx-delete="/curtir" 
+        hx-target="#contador" 
+        hx-confirm="Tem certeza que deseja zerar as curtidas?">
+    Zerar Curtidas
+</button>

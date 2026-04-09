@@ -1,0 +1,550 @@
+@CHARSET "ISO-8859-1";
+
+.text_right {
+	FONT-SIZE: 8pt;
+	COLOR: #666666;
+	BORDER-TOP-STYLE: inset;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BORDER-RIGHT-STYLE: inset;
+	BORDER-LEFT-STYLE: inset;
+	TEXT-ALIGN: right;
+	BORDER-BOTTOM-STYLE: inset
+}
+
+.text_left {
+	FONT-SIZE: 8pt;
+	COLOR: #666666;
+	BORDER-TOP-STYLE: inset;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BORDER-RIGHT-STYLE: inset;
+	BORDER-LEFT-STYLE: inset;
+	TEXT-ALIGN: left;
+	BORDER-BOTTOM-STYLE: inset
+}
+
+.text_center {
+	FONT-SIZE: 8pt;
+	COLOR: #666666;
+	BORDER-TOP-STYLE: inset;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BORDER-RIGHT-STYLE: inset;
+	BORDER-LEFT-STYLE: inset;
+	TEXT-ALIGN: center;
+	BORDER-BOTTOM-STYLE: inset
+}
+
+.text_hidden_center {
+	FONT-SIZE: 8pt;
+	WIDTH: 100%;
+	COLOR: #666666;
+	BORDER-TOP-STYLE: none;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BORDER-RIGHT-STYLE: none;
+	BORDER-LEFT-STYLE: none;
+	BACKGROUND-COLOR: white;
+	TEXT-ALIGN: center;
+	BORDER-BOTTOM-STYLE: none
+}
+
+.text_hidden_left {
+	FONT-SIZE: 8pt;
+	WIDTH: 100%;
+	COLOR: #666666;
+	BORDER-TOP-STYLE: none;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BORDER-RIGHT-STYLE: none;
+	BORDER-LEFT-STYLE: none;
+	BACKGROUND-COLOR: white;
+	TEXT-ALIGN: left;
+	BORDER-BOTTOM-STYLE: none
+}
+
+A.normal:link {
+	FONT-SIZE: 10px;
+	COLOR: olive;
+	FONT-FAMILY: verdana;
+	TEXT-DECORATION: none
+}
+
+A.normal:visited {
+	FONT-SIZE: 10px;
+	COLOR: olive;
+	FONT-FAMILY: verdana;
+	TEXT-DECORATION: none
+}
+
+A.normal:hover {
+	FONT-SIZE: 10px;
+	COLOR: olive;
+	FONT-FAMILY: verdana;
+	TEXT-DECORATION: underline
+}
+
+A.normal_verde:link {
+	FONT-SIZE: 10px;
+	COLOR: #336633;
+	FONT-FAMILY: verdana, Arial;
+	TEXT-DECORATION: none
+}
+
+A.normal_verde:visited {
+	FONT-SIZE: 10px;
+	COLOR: #336633;
+	FONT-FAMILY: verdana, Arial;
+	TEXT-DECORATION: none
+}
+
+A.normal_verde:hover {
+	FONT-SIZE: 10px;
+	COLOR: #336633;
+	FONT-FAMILY: verdana, Arial;
+	TEXT-DECORATION: underline
+}
+
+P {
+	FONT-SIZE: 10px;
+	FONT-FAMILY: verdana
+}
+
+P.rel_header {
+	BORDER-RIGHT: 1px;
+	BORDER-TOP: 1px;
+	MARGIN-TOP: 20px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 13px;
+	MARGIN-BOTTOM: 40px;
+	PADDING-BOTTOM: 6px;
+	BORDER-LEFT: 1px;
+	BORDER-BOTTOM: #dcdcdc 1px solid;
+	TEXT-ALIGN: center
+}
+
+P.rel_header_center {
+	MARGIN-TOP: 20px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 13px;
+	MARGIN-BOTTOM: 20px;
+	PADDING-BOTTOM: 6px;
+	TEXT-ALIGN: center
+}
+
+P.center {
+	TEXT-ALIGN: center
+}
+
+P.right {
+	TEXT-ALIGN: right
+}
+
+P.linha {
+	BORDER-RIGHT: 1px;
+	BORDER-TOP: 1px;
+	MARGIN-TOP: 25px;
+	FONT-WEIGHT: bold;
+	MARGIN-BOTTOM: 10px;
+	PADDING-BOTTOM: 3px;
+	BORDER-LEFT: 1px;
+	WIDTH: 100%;
+	COLOR: maroon;
+	BORDER-BOTTOM: #dcdcdc 1px solid;
+	TEXT-ALIGN: left
+}
+
+P.verde_linha {
+	BORDER-RIGHT: 1px;
+	BORDER-TOP: 1px;
+	MARGIN-TOP: 25px;
+	FONT-WEIGHT: bold;
+	MARGIN-BOTTOM: 10px;
+	PADDING-BOTTOM: 3px;
+	BORDER-LEFT: 1px;
+	WIDTH: 100%;
+	COLOR: green;
+	BORDER-BOTTOM: #dcdcdc 1px solid;
+	TEXT-ALIGN: left
+}
+
+P.linha_black {
+	BORDER-RIGHT: 1px;
+	BORDER-TOP: 1px;
+	MARGIN-TOP: 25px;
+	MARGIN-BOTTOM: 10px;
+	PADDING-BOTTOM: 3px;
+	BORDER-LEFT: 1px;
+	WIDTH: 100%;
+	COLOR: black;
+	BORDER-BOTTOM: #dcdcdc 1px solid
+}
+
+P.mensagem {
+	BORDER-RIGHT: red 1px solid;
+	PADDING-RIGHT: 7px;
+	BORDER-TOP: red 1px solid;
+	MARGIN-TOP: 15px;
+	PADDING-LEFT: 7px;
+	MARGIN-BOTTOM: 5px;
+	PADDING-BOTTOM: 7px;
+	BORDER-LEFT: red 1px solid;
+	PADDING-TOP: 7px;
+	BORDER-BOTTOM: red 1px solid
+}
+
+UL LI {
+	FONT-SIZE: 10px;
+	FONT-FAMILY: verdana
+}
+
+HR {
+	COLOR: gray;
+	HEIGHT: 1px
+}
+
+UL.normal LI {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px
+}
+
+UL.none {
+	PADDING-LEFT: 0px;
+	MARGIN-LEFT: 0px;
+	LIST-STYLE-TYPE: none;
+	TEXT-ALIGN: left
+}
+
+UL.lista {
+	PADDING-LEFT: 0px;
+	MARGIN-LEFT: 0px;
+	TEXT-ALIGN: left
+}
+
+UL.lista LI {
+	PADDING-LEFT: 3px;
+	PADDING-BOTTOM: 5px;
+	LIST-STYLE-TYPE: none
+}
+
+LI.menu_item {
+	PADDING-RIGHT: 1px;
+	PADDING-LEFT: 1px;
+	FONT-SIZE: 11px;
+	PADDING-BOTTOM: 1px;
+	MARGIN-LEFT: 3px;
+	PADDING-TOP: 1px;
+	FONT-FAMILY: arial;
+	LIST-STYLE-TYPE: none
+}
+
+LI.lista {
+	LIST-STYLE-TYPE: none
+}
+
+SELECT {
+	FONT-SIZE: 11px;
+	FONT-FAMILY: verdana
+}
+
+SELECT.limitado {
+	WIDTH: 98%
+}
+
+INPUT {
+	PADDING-RIGHT: 1px;
+	PADDING-LEFT: 1px;
+	FONT-SIZE: 11px;
+	PADDING-BOTTOM: 1px;
+	PADDING-TOP: 1px;
+	FONT-FAMILY: verdana
+}
+
+INPUT.label {
+	COLOR: #666666;
+	BORDER-TOP-STYLE: none;
+	BORDER-RIGHT-STYLE: none;
+	BORDER-LEFT-STYLE: none;
+	BACKGROUND-COLOR: white;
+	BORDER-BOTTOM-STYLE: none
+}
+
+INPUT.right {
+	TEXT-ALIGN: right
+}
+
+TEXTAREA {
+	FONT-SIZE: 11px;
+	FONT-FAMILY: verdana
+}
+
+TEXTAREA.fixed {
+	FONT-SIZE: 11px;
+	COLOR: navy;
+	FONT-FAMILY: Courier New
+}
+
+FONT.det_header {
+	COLOR: maroon
+}
+
+FONT.small {
+	FONT-SIZE: 9px;
+	FONT-FAMILY: arial
+}
+
+TABLE.normal TR TD {
+	BORDER-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	FONT-SIZE: 10px;
+	BORDER-LEFT: 0px;
+	BORDER-BOTTOM: 0px;
+	FONT-FAMILY: verdana
+}
+
+.table_rel_header {
+	BORDER-RIGHT: #dcdcdc 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #dcdcdc 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 13px;
+	PADDING-BOTTOM: 2px;
+	BORDER-LEFT: #dcdcdc 1px solid;
+	WIDTH: 100%;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #dcdcdc 1px solid;
+	FONT-FAMILY: verdana
+}
+
+.table_rel_header FONT.maior {
+	FONT-SIZE: 18px;
+	LETTER-SPACING: 1px
+}
+
+.table_list {
+	FONT-SIZE: 10px;
+	FONT-FAMILY: verdana;
+	BORDER-COLLAPSE: collapse
+}
+
+.table_list_cinza_escuro {
+	FONT-SIZE: 10px;
+	FONT-FAMILY: verdana;
+	BORDER-COLLAPSE: collapse
+}
+
+.table_list TR TD {
+	BORDER-RIGHT: #dcdcdc 1px solid;
+	PADDING-RIGHT: 3px;
+	BORDER-TOP: #dcdcdc 1px solid;
+	PADDING-LEFT: 3px;
+	PADDING-BOTTOM: 3px;
+	BORDER-LEFT: #dcdcdc 1px solid;
+	PADDING-TOP: 3px;
+	BORDER-BOTTOM: #dcdcdc 1px solid
+}
+
+.table_list_cinza_escuro TR TD {
+	BORDER-RIGHT: #c0c0c0 1px solid;
+	PADDING-RIGHT: 3px;
+	BORDER-TOP: #c0c0c0 1px solid;
+	PADDING-LEFT: 3px;
+	PADDING-BOTTOM: 3px;
+	BORDER-LEFT: #c0c0c0 1px solid;
+	PADDING-TOP: 3px;
+	BORDER-BOTTOM: #c0c0c0 1px solid
+}
+
+.table_list_header {
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	FONT-WEIGHT: bold;
+	PADDING-BOTTOM: 2px;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BACKGROUND-COLOR: #efefef
+}
+
+.table_list_header_verde {
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	FONT-WEIGHT: bold;
+	PADDING-BOTTOM: 2px;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BACKGROUND-COLOR: #ccffcc
+}
+
+.table_list_header_verde_impressao {
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	FONT-WEIGHT: bold;
+	PADDING-BOTTOM: 2px;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.table_linha TR TD {
+	BORDER-RIGHT: #dcdcdc 0px solid;
+	PADDING-RIGHT: 4px;
+	BORDER-TOP: #dcdcdc 0px solid;
+	PADDING-LEFT: 4px;
+	FONT-SIZE: 10px;
+	PADDING-BOTTOM: 4px;
+	BORDER-LEFT: #dcdcdc 0px solid;
+	PADDING-TOP: 4px;
+	BORDER-BOTTOM: #dcdcdc 1px solid;
+	FONT-FAMILY: verdana
+}
+
+.table_det_header {
+	COLOR: maroon;
+	TEXT-ALIGN: right
+}
+
+.table_busca {
+	BORDER-RIGHT: #dcdcdc 1px solid;
+	BORDER-TOP: #dcdcdc 1px solid;
+	BORDER-LEFT: #dcdcdc 1px solid;
+	BORDER-BOTTOM: #dcdcdc 1px solid;
+	BACKGROUND-COLOR: #ffffee
+}
+
+.table_busca INPUT {
+	FONT-SIZE: 11px;
+	FONT-FAMILY: verdana
+}
+
+.table_v_border {
+	BORDER-RIGHT: #dcdcdc 0px solid;
+	BORDER-TOP: #dcdcdc 0px solid;
+	BORDER-LEFT: #dcdcdc 1px solid;
+	BORDER-BOTTOM: #dcdcdc 0px solid
+}
+
+#texto_borda {
+	BORDER-RIGHT: #dcdcdc 1px solid;
+	PADDING-RIGHT: 1px;
+	BORDER-TOP: #dcdcdc 1px solid;
+	PADDING-LEFT: 1px;
+	FONT-SIZE: 10px;
+	PADDING-BOTTOM: 1px;
+	BORDER-LEFT: #dcdcdc 1px solid;
+	PADDING-TOP: 1px;
+	BORDER-BOTTOM: #dcdcdc 1px solid;
+	FONT-FAMILY: verdana
+}
+
+#texto_borda P {
+	MARGIN-TOP: 15px;
+	FONT-SIZE: 10px;
+	MARGIN-BOTTOM: 5px;
+	FONT-FAMILY: verdana
+}
+
+#paginacao {
+	FONT-SIZE: 10px;
+	WIDTH: 100%;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	TEXT-ALIGN: left
+}
+
+.text_hidden_red {
+	FONT-SIZE: 8pt;
+	WIDTH: 100%;
+	COLOR: #ff0000;
+	BORDER-TOP-STYLE: none;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BORDER-RIGHT-STYLE: none;
+	BORDER-LEFT-STYLE: none;
+	BACKGROUND-COLOR: white;
+	TEXT-ALIGN: right;
+	BORDER-BOTTOM-STYLE: none
+}
+
+/* Renata - 04/08/2011 - formatado para busca pública por área de conhecimento */
+.ui-widget {
+	font-family: Verdana, Arial, sans-serif !important;
+	font-size: 8pt !important;
+}
+
+.ui-widget .ui-widget {
+	font-size: 8pt !important;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button
+	{
+	font-family: Verdana, Arial, sans-serif !important;
+	font-size: 1em;
+}
+
+/* 15/12/2011 */
+/* Alterado por Renata - adicionar height:18px; ao .ui-jqgrid-titlebar  */
+/* se não fizer isso, qdo a grid for usada em uma página normal, a barra de título ficará super larga */
+.ui-jqgrid .ui-jqgrid-titlebar {
+	padding: .3em .2em .2em .3em !important;
+	position: relative !important;
+	border-left: 0px none !important;
+	border-right: 0px none !important;
+	border-top: 0px none !important;
+	height: 18px !important;
+}
+
+/* 15/12/2011 */
+/* Alterado por Renata - adicionar height:18px; ao .ui-jqgrid-sortable  */
+/* se não fizer isso, qdo a grid for usada a partir da janela modal, a fonte fica grande - linha de cabeçalho */
+.ui-jqgrid .ui-jqgrid-sortable {
+	cursor: pointer !important;
+	font-size: 8pt !important;
+}
+
+/* 15/12/2011 */
+/* Alterado por Renata - adicionar height:18px; ao .ui-jqgrid-btable */
+/* se não fizer isso, qdo a grid for usada a partir da janela modal, a fonte fica grande - linha de detalhe */
+.ui-jqgrid .ui-jqgrid-btable {
+	table-layout: fixed !important;
+	margin: 0em !important;
+	outline-style: none !important;
+	font-size: 8pt !important;
+}
+
+/* 19/01/2015 */
+/* adicionado por Renata para que a altura das abas seja renderizada corretamente */
+.ui-helper-clearfix:after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+
+/* calendário : home.css */
+.txt_verdana_10pt_black {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+}
+
+/* Delimitador de strings em textareas */
+input+.maxlength-feedback, textarea+.maxlength-feedback {
+	display: block;
+	width: 100%;
+	font-size: 90%;
+}
+
+table.scroll {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table.scroll th, table.scroll td {
+	padding: 0;
+}
+
+.maxlength {
+	padding-top: 0.5em;
+}
+
+td.jqgridCellOverflow {
+	white-space: normal !important;
+	height: auto;
+}

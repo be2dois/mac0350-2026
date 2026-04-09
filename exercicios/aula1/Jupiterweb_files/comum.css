@@ -1,0 +1,192 @@
+	.novo-content
+	{
+		font-weight: bold;
+		color: #00AA00;
+		font-size: 14px;
+	}
+	.novo-content label
+	{
+		font-size: 8px;
+	}
+	.naodisponivel
+	{
+		display:none;  	
+	}
+	#layout_principal {
+    width: 100%;
+	}
+		
+	#layout_cabecalho {
+
+	}
+		
+	#layout_menu {
+		width: 170px;
+		float: left;
+		padding-top: 10px;
+	}
+	
+	#layout_conteudo {
+		padding-left: 181px;
+		padding-top: 10px;
+	}
+	
+	.ie #layout_conteudo {
+		padding-left: 10px;
+	}	
+ 
+		a.link_cabecalho:active  {font-family: verdana; font-size: 10px; color: olive; text-decoration: none}
+	a.link_cabecalho:link    {font-family: verdana; font-size: 10px; color: olive; text-decoration: none}
+	a.link_cabecalho:visited {font-family: verdana; font-size: 10px; color: olive; text-decoration: none}
+	a.link_cabecalho:hover   {font-family: verdana; font-size: 10px; color: gray; text-decoration: underline}
+	
+	#my_web_cabecalho{
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;		
+		font-size: 10px;
+		text-align:left;
+		width:90%;
+		border-bottom:solid;
+		border-bottom-width:thin;
+		border-bottom-color:#666666;
+		padding-bottom:4px;
+		margin-bottom: 4px;
+	}
+	
+	#my_web_cabecalho_descricao{
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;		
+		font-size: 10px;
+		padding-bottom:10px;
+	}
+	
+	
+	
+	
+/* ----------------------------- Menu Horizontal ----------------------------- */
+ul.listaMapaSite ul{display:none}
+ul.listaMapaSite li:hover>ul{display:block}
+ul.listaMapaSite ul{position: absolute;left:5px;top:110%;}
+ul.listaMapaSite ul ul{position: absolute;left:98%;top:-2px;}
+
+ul.listaMapaSite,ul.listaMapaSite ul{
+	margin:-3px 0px 10px -3px;
+	list-style:none;
+	padding:0px 2px 2px 0px;
+	background-color:#FFFFFF;
+	background-repeat:repeat;
+	border-color: #CCCCCC;
+	border-width:1px;
+	border-style:solid;
+	width:100%;
+	z-index:10;
+}
+ul.listaMapaSite table {border-collapse:collapse}
+ul.listaMapaSite {
+	display:block;
+	zoom:1;
+	float: left;
+}
+ul.listaMapaSite ul{
+	width:160px;
+}
+ul.listaMapaSite li{
+	display:block;
+	margin:2px 0px 0px 2px;
+}
+ul.listaMapaSite a:active, ul.listaMapaSite a:focus {
+  outline-style:none;
+}
+ul.listaMapaSite a, ul.listaMapaSite li.dis a:hover, ul.listaMapaSite li.sep a:hover{
+	display:block;
+	vertical-align:middle;
+	background-color:#FFFFFF;
+	border-width:0px;
+	border-color:#E4E1DE;
+	border-style:solid;
+	text-align:left;
+	text-decoration:none;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:6px;
+	padding-right:6px;
+	font:normal 10px Verdana;
+	color: olive;
+}
+ul.listaMapaSite span{
+	overflow:hidden;
+}
+ul.listaMapaSite li {
+	float:left;
+}
+ul.listaMapaSite ul li {
+	float:none;
+}
+ul.listaMapaSite ul a {
+	text-align:left;
+	white-space:normal;
+}
+ul.listaMapaSite li.sep{
+	text-align:left;
+	padding:0px;
+	line-height:0;
+}
+ul.listaMapaSite li.sep span{
+	float:none;	
+	padding-right:0;
+	width:5;
+	height:16;
+	display:inline-block;
+	background-color:#AAAAAA;	
+	background-image:none;
+}
+ul.listaMapaSite ul li.sep span{
+	width:80%;
+	height:3;
+}
+ul.listaMapaSite li:hover{
+	position:relative;
+}
+ul.listaMapaSite li:hover>a{
+	background-color:#D6D6D6;
+	border-color:#7D7D7D;
+	border-style:solid;
+	font:normal 10px Verdana;
+	color: #000000;
+	text-decoration:none;
+}
+ul.listaMapaSite li a:hover{
+	position:relative;
+	background-color:#D6D6D6;
+	border-width:0px;
+	border-color:#7D7D7D;
+	border-style:solid;
+	font:normal 10px Verdana;
+	color:#000000;
+	text-decoration:none;	
+	cursor:pointer;cursor:hand;
+}
+ul.listaMapaSite li.dis a {
+	color: #AAAAAA !important;
+}
+ul.listaMapaSite img {
+  border:none;float:left;margin-right:4px;width:16px;height:16px;
+}
+ul.listaMapaSite ul img {
+	width:16px; height:15px;
+}
+
+ul.listaMapaSite img.over{display:none}
+ul.listaMapaSite li.dis a:hover img.over{display:none !important}
+ul.listaMapaSite li.dis a:hover img.def {display:inline !important}
+ul.listaMapaSite li:hover > a img.def  {display:none}
+ul.listaMapaSite li:hover > a img.over {display:inline}
+ul.listaMapaSite a:hover img.over,ul.pureCssMenu a:hover ul img.def,ul.pureCssMenu a:hover a:hover ul img.def,ul.pureCssMenu a:hover a:hover a:hover ul img.def,ul.pureCssMenu a:hover a:hover img.over,ul.pureCssMenu a:hover a:hover a:hover img.over,ul.pureCssMenu a:hover a:hover a:hover a:hover img.over{display:inline}
+ul.listaMapaSite a:hover img.def,ul.pureCssMenu a:hover ul img.over,ul.pureCssMenu a:hover a:hover ul img.over,ul.pureCssMenu a:hover a:hover a:hover ul img.over,ul.pureCssMenu a:hover a:hover img.def,ul.pureCssMenu a:hover a:hover a:hover img.def,ul.pureCssMenu a:hover a:hover a:hover a:hover img.def{display:none}
+ul.listaMapaSite a:hover ul,ul.pureCssMenu a:hover a:hover ul,ul.pureCssMenu a:hover a:hover a:hover ul{display:block}
+ul.listaMapaSite a:hover ul ul,ul.pureCssMenu a:hover a:hover ul ul{display:none}
+ul.listaMapaSite span{
+	display:block;
+	background-image:url(../images/arrow_sub1.gif);
+	background-position:right center;
+	background-repeat: no-repeat;
+  padding-right:11px;
+}	

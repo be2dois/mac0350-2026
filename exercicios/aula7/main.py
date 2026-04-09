@@ -63,10 +63,5 @@ def listar_tarefas_do_aluno(aluno_nusp: int):
         # através da estruturação de uma consulta normal SQL,
         # quanto simplesmente pegando o Aluno
         # e retornando a propriedade implementada anteriormente.
-        query = (
-            select(Aluno)
-            .join(Tarefa, Tarefa.aluno_nusp == Aluno.nusp)
-            .where(Aluno.nusp == aluno_nusp)
-        )
-
+        query = select(Tarefa).where(Tarefa.aluno_nusp == aluno_nusp)
         return session.exec(query).all()

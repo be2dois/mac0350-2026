@@ -1,0 +1,35 @@
+<form hx-post="/novaMateria"
+      hx-target="#mensagem"
+      hx-swap="beforeend">
+    <input type="text" name="codigo" placeholder="Codigo da materia" required>
+    <input type="text" name="nome" placeholder="Nome da materia" required>
+    <button type="submit">Salvar</button>
+</form>
+
+<form hx-post="/apostar"
+      hx-target="#mensagem"
+      hx-swap="beforeend">
+    <input type="text" name="nome" placeholder="Nome da avaliacao" required>
+    <input type="text" name="codigo" placeholder="Codigo da materia" required>
+    <input type="number" name="previa" placeholder="Nota apostada" required>
+    <input type="number" name="aposta" placeholder="Valor apostado" required>
+    <button type="submit">Apostar</button>
+</form>
+
+<form hx-put="/resolver"
+      hx-target="#mensagem"
+      hx-swap="beforeend">
+    <input type="number" name="id" placeholder="ID da aposta" required>
+    <input type="number" name="final" placeholder="Nota obtida" required>
+    <button type="submit">Resolver aposta</button>
+</form>
+
+<form hx-delete="/deletarAposta"
+      hx-target="#mensagem"
+      hx-swap="beforeend">
+    <input type="number" name="id" placeholder="ID da aposta" required>
+    <button type="submit">Deletar aposta</button>
+</form>
+
+<br>
+<div id="mensagem"></div>

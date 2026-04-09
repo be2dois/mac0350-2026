@@ -1,0 +1,40 @@
+<div>
+    <input type="text" 
+        name="busca" 
+        placeholder="Buscar matéria..."
+        hx-get="/listaMaterias"
+        hx-trigger="input changed delay:500ms"
+        hx-select="#lista"
+        hx-target="#lista"
+        value="{{ busca }}">
+</div>
+
+<div id="lista">
+    <ul>
+        {% for materia in materias %}
+            <li>{{ materia.codigo }} - {{ materia.nome }}</li>
+        {% else %}
+            <li>Não há matérias cadastradas.</li>
+        {% endfor %}
+    </ul>
+
+    <div class="paginacao">
+        {% if pagina > 1 %}
+            <button hx-get="/listaMaterias?busca={{ busca }}&pagina={{ pagina - 1 }}"
+                    hx-target="#lista"
+                    hx-select="#lista">
+                Anterior
+            </button>
+        {% endif %}
+
+        <span>Página {{ pagina }}</span>
+
+        {% if proxima %}
+            <button hx-get="/listaMaterias?busca={{ busca }}&pagina={{ pagina + 1 }}"
+                    hx-target="#lista"
+                    hx-select="#lista">
+                Próxima
+            </button>
+        {% endif %}
+    </div>
+</div>

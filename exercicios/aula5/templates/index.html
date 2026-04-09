@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Criar Usuário</h1>
+    <form>
+        <input type="text" id="nome" placeholder="Nome"><br><br>
+        <input type="password" id="senha" placeholder="Senha"><br><br>
+        <input type="text" id="bio" placeholder="Bio"><br><br>
+        <button type="button" onclick="enviarUsuario()">Salvar</button>
+    </form>
+    <p><a href="/login">Ir para Login</a></p>
+
+    <script>
+        async function enviarUsuario() {
+            const dados = {
+                nome: document.getElementById('nome').value,
+                senha: document.getElementById('senha').value,
+                bio: document.getElementById('bio').value
+            };
+
+            const resposta = await fetch('/users', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dados)
+            });
+
+            if (resposta.ok) {
+                const resultado = await resposta.json();
+                alert("Usuário " + resultado.usuario + " criado!");
+                window.location.href = "/login";
+            } else {
+                alert("Erro ao enviar!");
+            }
+        }
+    </script>
+</body>
+</html>
